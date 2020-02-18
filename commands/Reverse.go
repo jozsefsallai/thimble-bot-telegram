@@ -19,6 +19,6 @@ func reverse(str string) string {
 // ReverseCommand will return the reverse of a given string
 func ReverseCommand(bot *tb.Bot) interface{} {
 	return func(m *tb.Message) {
-		bot.Send(m.Sender, reverse(m.Payload))
+		bot.Send(m.Chat, reverse(m.Payload))
 	}
 }

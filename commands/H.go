@@ -7,6 +7,6 @@ import (
 // HCommand will just say "h"
 func HCommand(bot *tb.Bot) interface{} {
 	return func(m *tb.Message) {
-		bot.Send(m.Sender, "h")
+		bot.Send(m.Chat, "h")
 	}
 }
