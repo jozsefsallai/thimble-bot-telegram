@@ -39,7 +39,11 @@ func ShipCommand(bot *tb.Bot) interface{} {
 	return func(m *tb.Message) {
 		delimiter := getDelimiter(m.Payload)
 		if len(delimiter) == 0 {
-			bot.Send(m.Chat, "The arguments you have provided are invalid. The correct form is `person1 x person2` or `person1 and person2`.")
+			bot.Send(
+				m.Chat,
+				"The arguments you have provided are invalid. The correct form is `person1 x person2` or `person1 and person2`.",
+				tb.ModeMarkdown,
+			)
 			return
 		}
 

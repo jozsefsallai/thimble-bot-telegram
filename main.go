@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"time"
 
@@ -21,6 +22,11 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	bot.Handle("/start", func(m *tb.Message) {
+		message := fmt.Sprintf("Hello there, %s! I am ready to serve you :)", m.Sender.Username)
+		bot.Send(m.Chat, message)
+	})
 
 	bot.Handle("/h", commands.HCommand(bot))
 	bot.Handle("/reverse", commands.ReverseCommand(bot))
