@@ -31,7 +31,7 @@ func main() {
 
 	bot.Handle("/8ball", commands.EightBallCommand(bot))
 	utils.MultiCommand(bot, []string{"/cat", "/randomcat"}, commands.ShibeAPICommand(bot, "cat"))
-	utils.MultiCommand(bot, []string{"/bird", "/birb", "/randombird"}, commands.ShibeAPICommand(bot, "cat"))
+	utils.MultiCommand(bot, []string{"/bird", "/birb", "/randombird"}, commands.ShibeAPICommand(bot, "bird"))
 	bot.Handle("/h", commands.HCommand(bot))
 	bot.Handle("/reverse", commands.ReverseCommand(bot))
 	bot.Handle("/ship", commands.ShipCommand(bot))
