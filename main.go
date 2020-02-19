@@ -28,6 +28,7 @@ func main() {
 		bot.Send(m.Chat, message)
 	})
 
+	bot.Handle("/8ball", commands.EightBallCommand(bot))
 	bot.Handle("/h", commands.HCommand(bot))
 	bot.Handle("/reverse", commands.ReverseCommand(bot))
 	bot.Handle("/ship", commands.ShipCommand(bot))
