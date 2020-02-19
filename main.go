@@ -30,6 +30,8 @@ func main() {
 		bot.Send(m.Chat, message)
 	})
 
+	bot.Handle("/help", commands.HelpCommand(bot))
+
 	bot.Handle("/8ball", commands.EightBallCommand(bot))
 	utils.MultiCommand(bot, aliases.For["RandomCat"], commands.ShibeAPICommand(bot, "cat"))
 	utils.MultiCommand(bot, aliases.For["RandomBird"], commands.ShibeAPICommand(bot, "bird"))
