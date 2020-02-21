@@ -55,6 +55,10 @@ func HelpCommand(bot *tb.Bot) interface{} {
 				Description: "Get a random GIF of a bunny",
 			},
 			{
+				Aliases:     aliases.For["RandomDog"],
+				Description: "Get a random picture, GIF, or video of a dog.",
+			},
+			{
 				NameWithParams: "h",
 				Description:    "h",
 			},
@@ -65,6 +69,10 @@ func HelpCommand(bot *tb.Bot) interface{} {
 			{
 				NameWithParams: "ship [person1] x|and [person2]",
 				Description:    "Get the love compatibility of two people. The values must be separated by \" x \" or \" and \".",
+			},
+			{
+				NameWithParams: "stalinsort 1 2 3 4",
+				Description:    "Sort an array of numbers using the O(n) Stalin Sort algorithm.",
 			},
 		}
 

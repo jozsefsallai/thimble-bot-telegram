@@ -6,4 +6,5 @@ var For = map[string][]string{
 	"RandomBird":  []string{"/bird", "/birb", "/randombird"},
 	"RandomBunny": []string{"/bunny", "/bun", "/randombunny", "/rabbit", "/randomrabbit"},
 	"RandomCat":   []string{"/cat", "/randomcat"},
+	"RandomDog":   []string{"/dog", "/doggo", "/randomdog"},
 }
