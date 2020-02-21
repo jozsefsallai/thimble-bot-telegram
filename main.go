@@ -34,6 +34,8 @@ func main() {
 	bot.Handle("/help", commands.HelpCommand(bot))
 
 	utils.MultiCommand(bot, aliases.For["8ball"], commands.EightBallCommand(bot))
+	bot.Handle("/choice", commands.ChoiceCommand(bot))
+	bot.Handle("/flip", commands.FlipCommand(bot))
 	utils.MultiCommand(bot, aliases.For["RandomCat"], commands.ShibeAPICommand(bot, "cat"))
 	utils.MultiCommand(bot, aliases.For["RandomBird"], commands.ShibeAPICommand(bot, "bird"))
 	utils.MultiCommand(bot, aliases.For["RandomBunny"], commands.BunnyCommand(bot))

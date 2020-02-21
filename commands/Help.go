@@ -43,6 +43,14 @@ func HelpCommand(bot *tb.Bot) interface{} {
 				Description:    "Ask the 8-Ball any question.",
 			},
 			{
+				NameWithParams: "choice choices | separated | by | pipe",
+				Description:    "Choose from the given options.",
+			},
+			{
+				NameWithParams: "flip",
+				Description:    "Flip a coin.",
+			},
+			{
 				Aliases:     aliases.For["RandomCat"],
 				Description: "Get a random picture, GIF, or video of a cat.",
 			},
