@@ -9,6 +9,8 @@ import (
 	tb "gopkg.in/tucnak/telebot.v2"
 )
 
+// CommandDetails is a structure that contains the name with parameters,
+// the aliases, as well as the description of a command
 type CommandDetails struct {
 	NameWithParams string
 	Aliases        []string

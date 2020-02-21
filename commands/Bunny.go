@@ -21,7 +21,7 @@ type BunniesIOResponse struct {
 	ID          int                       `json:"id"`
 	Media       BunniesIOResponseGIFMedia `json:"media"`
 	Source      string                    `json:"source"`
-	ThisServed  int                       `json:"thisServed`
+	ThisServed  int                       `json:"thisServed"`
 	TotalServed int                       `json:"totalServed"`
 }
 

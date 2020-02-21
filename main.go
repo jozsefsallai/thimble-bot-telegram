@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"strings"
 	"time"
 
 	"github.com/jozsefsallai/thimble-bot-telegram/aliases"
@@ -39,6 +40,17 @@ func main() {
 	bot.Handle("/h", commands.HCommand(bot))
 	bot.Handle("/reverse", commands.ReverseCommand(bot))
 	bot.Handle("/ship", commands.ShipCommand(bot))
+	bot.Handle("/stalinsort", commands.StalinSortCommand(bot))
+
+	fmt.Println(strings.Join([]string{
+		"  _______ _     _           _     _        ____        _   ",
+		" |__   __| |   (_)         | |   | |      |  _ \\      | |  ",
+		"    | |  | |__  _ _ __ ___ | |__ | | ___  | |_) | ___ | |_ ",
+		"    | |  | '_ \\| | '_ ` _ \\| '_ \\| |/ _ \\ |  _ < / _ \\| __|",
+		"    | |  | | | | | | | | | | |_) | |  __/ | |_) | (_) | |_ ",
+		"    |_|  |_| |_|_|_| |_| |_|_.__/|_|\\___| |____/ \\___/ \\__|",
+	}, "\n"))
+	fmt.Println("\nApp started successfully...")
 
 	bot.Start()
 }
