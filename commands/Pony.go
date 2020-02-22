@@ -6,6 +6,8 @@ import (
 	tb "gopkg.in/tucnak/telebot.v2"
 )
 
+// PonyCommand will return a random pony image/GIF/video based on the message
+// payload
 func PonyCommand(bot *tb.Bot) interface{} {
 	return func(m *tb.Message) {
 		if len(m.Payload) == 0 {
