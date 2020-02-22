@@ -42,6 +42,7 @@ func main() {
 	utils.MultiCommand(bot, aliases.For["RandomDog"], commands.DogCommand(bot))
 	bot.Handle("/h", commands.HCommand(bot))
 	bot.Handle("/reverse", commands.ReverseCommand(bot))
+	utils.MultiCommand(bot, aliases.For["RandomPony"], commands.PonyCommand(bot))
 	bot.Handle("/ship", commands.ShipCommand(bot))
 	bot.Handle("/slap", commands.SlapCommand(bot))
 	bot.Handle("/stalinsort", commands.StalinSortCommand(bot))
