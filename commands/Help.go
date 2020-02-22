@@ -71,6 +71,10 @@ func HelpCommand(bot *tb.Bot) interface{} {
 				Description:    "h",
 			},
 			{
+				Aliases:     aliases.For["RandomPony"],
+				Description: "Get a random pony picture/gif/etc.",
+			},
+			{
 				NameWithParams: "reverse [input]",
 				Description:    "Get the reverse of a given string.",
 			},
