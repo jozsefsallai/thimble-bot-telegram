@@ -43,6 +43,7 @@ func main() {
 	bot.Handle("/h", commands.HCommand(bot))
 	bot.Handle("/reverse", commands.ReverseCommand(bot))
 	bot.Handle("/ship", commands.ShipCommand(bot))
+	bot.Handle("/slap", commands.SlapCommand(bot))
 	bot.Handle("/stalinsort", commands.StalinSortCommand(bot))
 
 	fmt.Println(strings.Join([]string{
