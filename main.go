@@ -46,6 +46,8 @@ func main() {
 	bot.Handle("/ship", commands.ShipCommand(bot))
 	bot.Handle("/slap", commands.SlapCommand(bot))
 	bot.Handle("/stalinsort", commands.StalinSortCommand(bot))
+	utils.MultiCommand(bot, aliases.For["Strawpoll"], commands.StrawpollCommand(bot, false))
+	utils.MultiCommand(bot, aliases.For["StrawpollMulti"], commands.StrawpollCommand(bot, true))
 
 	fmt.Println(strings.Join([]string{
 		"  _______ _     _           _     _        ____        _   ",

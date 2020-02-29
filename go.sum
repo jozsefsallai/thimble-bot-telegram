@@ -1,5 +1,7 @@
 github.com/jozsefsallai/go-derpi v1.0.1 h1:l2XQXdO5wUTnlTMhbeDTBifdKZcFaNCySjb1hyll+3I=
 github.com/jozsefsallai/go-derpi v1.0.1/go.mod h1:db/Qsv5wr0WwSrKVjgXOEHVY8TU7OlLWg58XW8gtU44=
+github.com/jozsefsallai/go-strawpoll v0.1.0 h1:lnacUX9+hiqs+1r3dDC/b09E8/t2QI1bjcjRJVEs8yQ=
+github.com/jozsefsallai/go-strawpoll v0.1.0/go.mod h1:kHbj/fqO2qxz96/ZeQZOGGdMlFwNQKTqCaOQ3qGNbmk=
 github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 gopkg.in/tucnak/telebot.v2 v2.0.0-20200209123123-209b6f88caa9 h1:P4ySb3sZmQk4y+gi2T6LnGTxqYVD3h2YU+U8laFWQOc=

@@ -8,18 +8,6 @@ import (
 	tb "gopkg.in/tucnak/telebot.v2"
 )
 
-func filterNonEmpty(arr []string) []string {
-	var output []string
-
-	for _, current := range arr {
-		if len(current) > 0 {
-			output = append(output, current)
-		}
-	}
-
-	return output
-}
-
 // ChoiceCommand will pick a random value from an array
 func ChoiceCommand(bot *tb.Bot) interface{} {
 	return func(m *tb.Message) {
@@ -29,7 +17,7 @@ func ChoiceCommand(bot *tb.Bot) interface{} {
 		}
 
 		choices := strings.Split(m.Payload, "|")
-		filteredChoices := filterNonEmpty(choices)
+		filteredChoices := utils.RemoveEmptyStrings(choices)
 
 		if len(filteredChoices) == 0 {
 			bot.Send(m.Chat, "Please provide things to pick from, delimited by | characters.")

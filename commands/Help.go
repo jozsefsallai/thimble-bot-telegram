@@ -86,6 +86,10 @@ func HelpCommand(bot *tb.Bot) interface{} {
 				NameWithParams: "stalinsort 1 2 3 4",
 				Description:    "Sort an array of numbers using the O(n) Stalin Sort algorithm.",
 			},
+			{
+				Aliases:     append(aliases.For["Strawpoll"], aliases.For["StrawpollMulti"]...),
+				Description: "Create a strawpoll. Syntax: `/strawpoll Poll title: option 1 | option 2 | etc`. Use /strawpollm for multi-choice polls.",
+			},
 		}
 
 		var rows []string
