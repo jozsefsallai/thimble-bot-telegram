@@ -13,9 +13,15 @@ type BotConfig struct {
 	Token string `json:"token"`
 }
 
+// PermissionsConfig contains bot permissions for certain commands and features
+type PermissionsConfig struct {
+	CanUploadMIA []int `json:"canUploadMIA"`
+}
+
 // Config contains the properties of a Thimble Bot configuration
 type Config struct {
-	Bot BotConfig `json:"bot"`
+	Bot         BotConfig         `json:"bot"`
+	Permissions PermissionsConfig `json:"permissions"`
 }
 
 // GetConfig returns the current configuration

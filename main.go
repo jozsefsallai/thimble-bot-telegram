@@ -34,8 +34,11 @@ func main() {
 	bot.Handle("/help", commands.HelpCommand(bot))
 
 	utils.MultiCommand(bot, aliases.For["8ball"], commands.EightBallCommand(bot))
+	bot.Handle("/addnana", commands.AddNanaCommand(bot))
 	bot.Handle("/choice", commands.ChoiceCommand(bot))
+	utils.MultiCommand(bot, aliases.For["Faputa"], commands.FaputaCommand(bot))
 	bot.Handle("/flip", commands.FlipCommand(bot))
+	utils.MultiCommand(bot, aliases.For["Nanachi"], commands.NanachiCommand(bot))
 	utils.MultiCommand(bot, aliases.For["RandomCat"], commands.ShibeAPICommand(bot, "cat"))
 	utils.MultiCommand(bot, aliases.For["RandomBird"], commands.ShibeAPICommand(bot, "bird"))
 	utils.MultiCommand(bot, aliases.For["RandomBunny"], commands.BunnyCommand(bot))
@@ -48,6 +51,12 @@ func main() {
 	bot.Handle("/stalinsort", commands.StalinSortCommand(bot))
 	utils.MultiCommand(bot, aliases.For["Strawpoll"], commands.StrawpollCommand(bot, false))
 	utils.MultiCommand(bot, aliases.For["StrawpollMulti"], commands.StrawpollCommand(bot, true))
+
+	photoHandlers := make(map[string]utils.PhotoHandler)
+	photoHandlers["addnana"] = commands.AddNanaCommand
+	photoHandlers["addfapu"] = commands.AddFapuCommand
+
+	bot.Handle(tb.OnPhoto, utils.HandlePhotos(bot, photoHandlers))
 
 	fmt.Println(strings.Join([]string{
 		"  _______ _     _           _     _        ____        _   ",

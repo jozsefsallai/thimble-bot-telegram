@@ -1,5 +1,8 @@
 {
   "bot": {
     "token": "your bot token"
+  },
+  "permissions": {
+    "canUploadMIA": [ "IDs of users that can upload" ]
   }
 }
