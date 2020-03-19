@@ -10,7 +10,8 @@ import (
 
 // BotConfig contains properties related to the general bot application
 type BotConfig struct {
-	Token string `json:"token"`
+	Token          string `json:"token"`
+	SaucenaoAPIKey string `json:"saucenaoAPIKey"`
 }
 
 // PermissionsConfig contains bot permissions for certain commands and features

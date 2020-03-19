@@ -1,6 +1,7 @@
 {
   "bot": {
-    "token": "your bot token"
+    "token": "your bot token",
+    "saucenaoAPIKey": "your SauceNAO API key"
   },
   "permissions": {
     "canUploadMIA": [ "IDs of users that can upload" ]
