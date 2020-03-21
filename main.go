@@ -37,6 +37,7 @@ func main() {
 	bot.Handle("/addnana", commands.AddNanaCommand(bot))
 	bot.Handle("/choice", commands.ChoiceCommand(bot))
 	bot.Handle("/delnana", commands.DeleteNanaCommand(bot))
+	bot.Handle("/delfapu", commands.DeleteFapuCommand(bot))
 	utils.MultiCommand(bot, aliases.For["Faputa"], commands.FaputaCommand(bot))
 	bot.Handle("/flip", commands.FlipCommand(bot))
 	utils.MultiCommand(bot, aliases.For["Nanachi"], commands.NanachiCommand(bot))
