@@ -8,7 +8,7 @@ require (
 	firebase.google.com/go v3.12.0+incompatible
 	github.com/jozsefsallai/go-derpi v1.0.1
 	github.com/jozsefsallai/go-strawpoll v0.1.0
-	github.com/jozsefsallai/gophersauce v1.0.0
+	github.com/jozsefsallai/gophersauce v1.0.1
 	github.com/lucsky/cuid v1.0.2
 	github.com/pkg/errors v0.9.1 // indirect
 	google.golang.org/api v0.20.0
