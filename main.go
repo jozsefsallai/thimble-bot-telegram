@@ -44,6 +44,7 @@ func main() {
 	utils.MultiCommand(bot, aliases.For["RandomCat"], commands.ShibeAPICommand(bot, "cat"))
 	utils.MultiCommand(bot, aliases.For["RandomBird"], commands.ShibeAPICommand(bot, "bird"))
 	utils.MultiCommand(bot, aliases.For["RandomBunny"], commands.BunnyCommand(bot))
+	utils.MultiCommand(bot, aliases.For["RandomFox"], commands.FoxCommand(bot))
 	utils.MultiCommand(bot, aliases.For["RandomDog"], commands.DogCommand(bot))
 	bot.Handle("/h", commands.HCommand(bot))
 	bot.Handle("/reverse", commands.ReverseCommand(bot))
